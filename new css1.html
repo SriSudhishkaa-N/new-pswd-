@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kerala Local Guide</title>
+
+    <!-- Creative Unique CSS -->
+    <style>
+        /* Kerala Local Guide – Creative Tropical CSS */
+
+        /* -------- Global Reset -------- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            background: linear-gradient(180deg, #e9fff4, #ffffff);
+            color: #194d36;
+            padding: 30px;
+        }
+
+        /* -------- Wave Header -------- */
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            position: relative;
+        }
+
+        .header h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: #0b6f4f;
+        }
+
+        /* Coconut leaf stripe */
+        .header::after {
+            content: "";
+            width: 120px;
+            height: 6px;
+            background: linear-gradient(90deg, #0b6f4f, #4ccf96);
+            border-radius: 20px;
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+        }
+
+        /* -------- Hero Bubble -------- */
+        .hero-box {
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 25px;
+            box-shadow: 0 6px 20px rgba(0, 83, 50, 0.1);
+            margin-bottom: 40px;
+            border-left: 6px solid #0b6f4f;
+        }
+
+        .hero-box h2 {
+            font-size: 1.6rem;
+            margin-bottom: 5px;
+        }
+
+        .hero-box p {
+            opacity: 0.8;
+            margin-bottom: 15px;
+        }
+
+        /* Search field */
+        .search-bar {
+            display: flex;
+            gap: 10px;
+        }
+
+        .search-bar input {
+            flex: 1;
+            padding: 12px;
+            border-radius: 12px;
+            border: 2px solid #c7eedd;
+            outline: none;
+            font-size: 1rem;
+        }
+
+        .search-bar button {
+            padding: 12px 20px;
+            border: none;
+            border-radius: 12px;
+            background: #0b6f4f;
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .search-bar button:hover {
+            background: #09553a;
+        }
+
+        /* -------- Place Grid -------- */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+        }
+
+        /* Floating cards */
+        .card {
+            background: white;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 14px 40px rgba(0, 0, 0, 0.18);
+        }
+
+        .card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        .card-content h3 {
+            margin-bottom: 5px;
+        }
+
+        .card-content p {
+            font-size: 0.95rem;
+            color: #4b6d5f;
+        }
+
+        /* Tag Badge */
+        .badge {
+            display: inline-block;
+            padding: 6px 12px;
+            border-radius: 20px;
+            background: #eafcf4;
+            color: #0b6f4f;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+
+        /* -------- Footer -------- */
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            color: #528a71;
+            font-size: 0.95rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- PAGE CONTENT STARTS HERE -->
+
+    <header class="header">
+        <h1>Kerala Local Guide</h1>
+    </header>
+
+    <section class="hero-box">
+        <h2>Explore Kerala's Hidden Wonders</h2>
+        <p>Search beaches, backwaters, waterfalls, hill stations & more.</p>
+
+        <div class="search-bar">
+            <input type="text" placeholder="Try: Varkala Beach, Munnar, Alleppey...">
+            <button>Search</button>
+        </div>
+    </section>
+
+    <section class="grid">
+        <!-- Card 1 -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Beach">
+            <div class="card-content">
+                <h3>Varkala Beach</h3>
+                <p>Golden cliffs, waves & stunning sunsets.</p>
+                <span class="badge">Beach</span>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+         
+            <img src="http://www.traveleast.in/wp-content/uploads/2022/07/291ea68227a843521f00b1fc0948c0ce.jpeg">
+            <div class="card-content">
+                <h3>Munnar Tea Estates</h3>
+                <p>Cool breeze, misty mountains & tea gardens.</p>
+                <span class="badge">Hill Station</span>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470" alt="Backwaters">
+            <div class="card-content">
+                <h3>Alleppey Backwaters</h3>
+                <p>Houseboats, canals & peaceful scenery.</p>
+                <span class="badge">Backwaters</span>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        © 2025 Kerala Local Guide — All Rights Reserved
+    </footer>
+
+</body>
+</html>
+
